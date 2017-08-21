@@ -141,8 +141,7 @@ problems and opportunities for refactorings and make sure that the code
 complies with coding standards. -->
   <target name="analyze" depends="init,
                                   clean,                                  
-                                  phpmd,
-                                  phpcpd">
+                                  phpmd">
     <!-- Moved inside target to support properties in target name -->
     <!--<phingcall target="coder-review-d${drupal.version}">-->
       <!-- Run the target as if it was executed from the Drupal root
