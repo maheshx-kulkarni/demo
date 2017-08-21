@@ -132,9 +132,7 @@ Make sure that our code is clean and functional. -->
 
 								 <target name="verify" depends="init,
                                  clean,
-                                 lint-php-custom,
-                                 check-php-debug,
-                                 check-js-debug,
+                                 lint-php-custom,                                 
                                  simpletest"/>
 <!-- ### Analyze code
 
