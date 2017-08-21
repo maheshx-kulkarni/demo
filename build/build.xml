@@ -140,8 +140,7 @@ Perform static analysis of the code to generate statistics, identify potential
 problems and opportunities for refactorings and make sure that the code
 complies with coding standards. -->
   <target name="analyze" depends="init,
-                                  clean,
-                                  phploc,
+                                  clean,                                  
                                   phpmd,
                                   phpcpd">
     <!-- Moved inside target to support properties in target name -->
