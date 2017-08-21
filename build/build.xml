@@ -132,8 +132,8 @@ Make sure that our code is clean and functional. -->
 
 								 <target name="verify" depends="init,
                                  clean,
-                                 lint-php-custom,                                 
-                                 simpletest"/>
+                                 lint-php-custom                               
+                                 "/>
 <!-- ### Analyze code
 
 Perform static analysis of the code to generate statistics, identify potential
@@ -145,7 +145,7 @@ complies with coding standards. -->
                                   phpmd,
                                   phpcpd">
     <!-- Moved inside target to support properties in target name -->
-    <phingcall target="coder-review-d${drupal.version}">
+    <!--<phingcall target="coder-review-d${drupal.version}">-->
       <!-- Run the target as if it was executed from the Drupal root
            directory. -->
       <property name="project.basedir" value="${project.drupal.dir}"/>
@@ -154,7 +154,7 @@ complies with coding standards. -->
       <!-- Make will run again as a part of the `init` target. We already have
            a working site so skip that. -->
       <property name="project.make.skip" value="1"/>
-    </phingcall>
+    <!--</phingcall>-->
   </target>
 
 <!-- ### Generate documentation
