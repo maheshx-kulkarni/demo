@@ -121,15 +121,21 @@ time and is largely obsolete when using GitHub. -->
 <!-- ### Verify code consistency
 
 Make sure that our code is clean and functional. -->
-  <target name="verify" depends="init,
+<!--  <target name="verify" depends="init,
                                  clean,
                                  lint-php-custom,
                                  lint-js-custom,
                                  lint-css-custom,
                                  check-php-debug,
                                  check-js-debug,
-                                 simpletest"/>
+                                 simpletest"/> -->
 
+								 <target name="verify" depends="init,
+                                 clean,
+                                 lint-php-custom,
+                                 check-php-debug,
+                                 check-js-debug,
+                                 simpletest"/>
 <!-- ### Analyze code
 
 Perform static analysis of the code to generate statistics, identify potential
